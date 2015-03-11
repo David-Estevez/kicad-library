@@ -13,12 +13,15 @@ hmc5883l.lib
 lsm303dlhc.lib
 74ahc2g126.lib
 
-# Modules obtained from hebi power project
+# Modules obtained from hebi power project #
 mos_p_diode.lib
 mcp73831.lib
 tps61200.lib
 ds2764.lib
 tl431.lib
+
+# Modules obtained from skymegaSMD project #
+mic5205.lib
 
 # Footprints obtained from hebi project #
 DO-214AC.kicad_mod
