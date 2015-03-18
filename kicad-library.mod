@@ -1,7 +1,11 @@
-PCBNEW-LibModule-V1  mar 17 mar 2015 00:19:37 CET
+PCBNEW-LibModule-V1  mié 18 mar 2015 17:58:19 CET
 # encoding utf-8
 Units mm
 $INDEX
+Board_Teensy_3_1
+Board_Teensy_3_1_extended
+Board_Teensy_3_1_w_front_pins
+Board_Teensy_3_1_w_side_pins
 Connector_PH_CONN_S2B-PH-SM4
 Connector_XBee-20Pin
 Connector_ZH_CONN-B5B-ZR-SM4-TF
@@ -28,6 +32,990 @@ SOT-23-3
 SOT-23-5
 SOT-23-generic
 $EndINDEX
+$MODULE Board_Teensy_3_1
+Po 0 0 0 15 5509AE9B 00000000 ~~
+Li Board_Teensy_3_1
+Sc 0
+AR 
+Op 0 0 0
+T0 -7.62 19.05 1 1 0 0.15 N V 21 N "Board_Teensy_3_1"
+T1 7.62 19.05 1 1 0 0.15 N V 21 N "VAL**"
+DS -1.27 -19.05 -1.27 -17.78 0.15 21
+DS -1.27 -17.78 1.27 -17.78 0.15 21
+DS 1.27 -17.78 1.27 -19.05 0.15 21
+DS -6.35 -19.05 6.35 -19.05 0.15 21
+DS -6.35 16.51 6.35 16.51 0.15 21
+DS 6.35 -19.05 6.35 16.51 0.15 21
+DS 6.35 16.51 8.89 16.51 0.15 21
+DS 8.89 16.51 8.89 -19.05 0.15 21
+DS 8.89 -19.05 6.35 -19.05 0.15 21
+DS -8.89 -19.05 -8.89 16.51 0.15 21
+DS -8.89 16.51 -6.35 16.51 0.15 21
+DS -6.35 16.51 -6.35 -19.05 0.15 21
+DS -6.35 -19.05 -8.89 -19.05 0.15 21
+$PAD
+Sh "1" R 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -17.78
+$EndPAD
+$PAD
+Sh "2" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -15.24
+$EndPAD
+$PAD
+Sh "3" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -12.7
+$EndPAD
+$PAD
+Sh "4" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -10.16
+$EndPAD
+$PAD
+Sh "5" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -7.62
+$EndPAD
+$PAD
+Sh "6" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -5.08
+$EndPAD
+$PAD
+Sh "7" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -2.54
+$EndPAD
+$PAD
+Sh "8" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 0
+$EndPAD
+$PAD
+Sh "9" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 2.54
+$EndPAD
+$PAD
+Sh "10" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 5.08
+$EndPAD
+$PAD
+Sh "11" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 7.62
+$EndPAD
+$PAD
+Sh "12" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 10.16
+$EndPAD
+$PAD
+Sh "13" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 12.7
+$EndPAD
+$PAD
+Sh "14" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 15.24
+$EndPAD
+$PAD
+Sh "15" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 15.24
+$EndPAD
+$PAD
+Sh "16" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 12.7
+$EndPAD
+$PAD
+Sh "17" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 10.16
+$EndPAD
+$PAD
+Sh "18" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 7.62
+$EndPAD
+$PAD
+Sh "19" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 5.08
+$EndPAD
+$PAD
+Sh "20" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 2.54
+$EndPAD
+$PAD
+Sh "21" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 0
+$EndPAD
+$PAD
+Sh "22" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -2.54
+$EndPAD
+$PAD
+Sh "23" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -5.08
+$EndPAD
+$PAD
+Sh "24" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -7.62
+$EndPAD
+$PAD
+Sh "25" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -10.16
+$EndPAD
+$PAD
+Sh "26" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -12.7
+$EndPAD
+$PAD
+Sh "27" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -15.24
+$EndPAD
+$PAD
+Sh "28" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -17.78
+$EndPAD
+$EndMODULE Board_Teensy_3_1
+$MODULE Board_Teensy_3_1_extended
+Po 0 0 0 15 5509AEA3 00000000 ~~
+Li Board_Teensy_3_1_extended
+Sc 0
+AR 
+Op 0 0 0
+T0 -7.62 19.05 1 1 0 0.15 N V 21 N "Board_Teensy_3_1_extended"
+T1 7.62 19.05 1 1 0 0.15 N V 21 N "VAL**"
+DS -1.27 -19.05 -1.27 -17.78 0.15 21
+DS -1.27 -17.78 1.27 -17.78 0.15 21
+DS 1.27 -17.78 1.27 -19.05 0.15 21
+DS -6.35 -19.05 6.35 -19.05 0.15 21
+DS -6.35 16.51 6.35 16.51 0.15 21
+DS 6.35 -19.05 6.35 16.51 0.15 21
+DS 6.35 16.51 8.89 16.51 0.15 21
+DS 8.89 16.51 8.89 -19.05 0.15 21
+DS 8.89 -19.05 6.35 -19.05 0.15 21
+DS -8.89 -19.05 -8.89 16.51 0.15 21
+DS -8.89 16.51 -6.35 16.51 0.15 21
+DS -6.35 16.51 -6.35 -19.05 0.15 21
+DS -6.35 -19.05 -8.89 -19.05 0.15 21
+$PAD
+Sh "1" R 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -17.78
+$EndPAD
+$PAD
+Sh "2" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -15.24
+$EndPAD
+$PAD
+Sh "3" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -12.7
+$EndPAD
+$PAD
+Sh "4" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -10.16
+$EndPAD
+$PAD
+Sh "5" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -7.62
+$EndPAD
+$PAD
+Sh "6" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -5.08
+$EndPAD
+$PAD
+Sh "7" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -2.54
+$EndPAD
+$PAD
+Sh "8" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 0
+$EndPAD
+$PAD
+Sh "9" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 2.54
+$EndPAD
+$PAD
+Sh "10" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 5.08
+$EndPAD
+$PAD
+Sh "11" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 7.62
+$EndPAD
+$PAD
+Sh "12" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 10.16
+$EndPAD
+$PAD
+Sh "13" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 12.7
+$EndPAD
+$PAD
+Sh "14" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 15.24
+$EndPAD
+$PAD
+Sh "15" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 15.24
+$EndPAD
+$PAD
+Sh "16" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 12.7
+$EndPAD
+$PAD
+Sh "17" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 10.16
+$EndPAD
+$PAD
+Sh "18" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 7.62
+$EndPAD
+$PAD
+Sh "19" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 5.08
+$EndPAD
+$PAD
+Sh "20" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 2.54
+$EndPAD
+$PAD
+Sh "21" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 0
+$EndPAD
+$PAD
+Sh "22" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -2.54
+$EndPAD
+$PAD
+Sh "23" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -5.08
+$EndPAD
+$PAD
+Sh "24" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -7.62
+$EndPAD
+$PAD
+Sh "25" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -10.16
+$EndPAD
+$PAD
+Sh "26" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -12.7
+$EndPAD
+$PAD
+Sh "27" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -15.24
+$EndPAD
+$PAD
+Sh "28" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -17.78
+$EndPAD
+$PAD
+Sh "29" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5.08 15.24
+$EndPAD
+$PAD
+Sh "30" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2.54 15.24
+$EndPAD
+$PAD
+Sh "31" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 15.24
+$EndPAD
+$PAD
+Sh "32" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2.54 15.24
+$EndPAD
+$PAD
+Sh "33" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -5.08 15.24
+$EndPAD
+$PAD
+Sh "34" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5.08 -5.08
+$EndPAD
+$PAD
+Sh "35" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5.08 -7.62
+$EndPAD
+$PAD
+Sh "36" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5.08 -10.16
+$EndPAD
+$EndMODULE Board_Teensy_3_1_extended
+$MODULE Board_Teensy_3_1_w_front_pins
+Po 0 0 0 15 5509AEA7 00000000 ~~
+Li Board_Teensy_3_1_w_front_pins
+Sc 0
+AR 
+Op 0 0 0
+T0 -7.62 19.05 1 1 0 0.15 N V 21 N "Board_Teensy_3_1_w_front_pins"
+T1 7.62 19.05 1 1 0 0.15 N V 21 N "VAL**"
+DS -1.27 -19.05 -1.27 -17.78 0.15 21
+DS -1.27 -17.78 1.27 -17.78 0.15 21
+DS 1.27 -17.78 1.27 -19.05 0.15 21
+DS -6.35 -19.05 6.35 -19.05 0.15 21
+DS -6.35 16.51 6.35 16.51 0.15 21
+DS 6.35 -19.05 6.35 16.51 0.15 21
+DS 6.35 16.51 8.89 16.51 0.15 21
+DS 8.89 16.51 8.89 -19.05 0.15 21
+DS 8.89 -19.05 6.35 -19.05 0.15 21
+DS -8.89 -19.05 -8.89 16.51 0.15 21
+DS -8.89 16.51 -6.35 16.51 0.15 21
+DS -6.35 16.51 -6.35 -19.05 0.15 21
+DS -6.35 -19.05 -8.89 -19.05 0.15 21
+$PAD
+Sh "1" R 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -17.78
+$EndPAD
+$PAD
+Sh "2" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -15.24
+$EndPAD
+$PAD
+Sh "3" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -12.7
+$EndPAD
+$PAD
+Sh "4" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -10.16
+$EndPAD
+$PAD
+Sh "5" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -7.62
+$EndPAD
+$PAD
+Sh "6" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -5.08
+$EndPAD
+$PAD
+Sh "7" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -2.54
+$EndPAD
+$PAD
+Sh "8" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 0
+$EndPAD
+$PAD
+Sh "9" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 2.54
+$EndPAD
+$PAD
+Sh "10" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 5.08
+$EndPAD
+$PAD
+Sh "11" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 7.62
+$EndPAD
+$PAD
+Sh "12" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 10.16
+$EndPAD
+$PAD
+Sh "13" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 12.7
+$EndPAD
+$PAD
+Sh "14" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 15.24
+$EndPAD
+$PAD
+Sh "15" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 15.24
+$EndPAD
+$PAD
+Sh "16" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 12.7
+$EndPAD
+$PAD
+Sh "17" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 10.16
+$EndPAD
+$PAD
+Sh "18" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 7.62
+$EndPAD
+$PAD
+Sh "19" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 5.08
+$EndPAD
+$PAD
+Sh "20" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 2.54
+$EndPAD
+$PAD
+Sh "21" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 0
+$EndPAD
+$PAD
+Sh "22" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -2.54
+$EndPAD
+$PAD
+Sh "23" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -5.08
+$EndPAD
+$PAD
+Sh "24" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -7.62
+$EndPAD
+$PAD
+Sh "25" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -10.16
+$EndPAD
+$PAD
+Sh "26" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -12.7
+$EndPAD
+$PAD
+Sh "27" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -15.24
+$EndPAD
+$PAD
+Sh "28" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -17.78
+$EndPAD
+$PAD
+Sh "29" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5.08 15.24
+$EndPAD
+$PAD
+Sh "30" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2.54 15.24
+$EndPAD
+$PAD
+Sh "31" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 15.24
+$EndPAD
+$PAD
+Sh "32" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2.54 15.24
+$EndPAD
+$PAD
+Sh "33" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -5.08 15.24
+$EndPAD
+$EndMODULE Board_Teensy_3_1_w_front_pins
+$MODULE Board_Teensy_3_1_w_side_pins
+Po 0 0 0 15 5509AEAA 00000000 ~~
+Li Board_Teensy_3_1_w_side_pins
+Sc 0
+AR 
+Op 0 0 0
+T0 -7.62 19.05 1 1 0 0.15 N V 21 N "Board_Teensy_3_1_w_side_pins"
+T1 7.62 19.05 1 1 0 0.15 N V 21 N "VAL**"
+DS -1.27 -19.05 -1.27 -17.78 0.15 21
+DS -1.27 -17.78 1.27 -17.78 0.15 21
+DS 1.27 -17.78 1.27 -19.05 0.15 21
+DS -6.35 -19.05 6.35 -19.05 0.15 21
+DS -6.35 16.51 6.35 16.51 0.15 21
+DS 6.35 -19.05 6.35 16.51 0.15 21
+DS 6.35 16.51 8.89 16.51 0.15 21
+DS 8.89 16.51 8.89 -19.05 0.15 21
+DS 8.89 -19.05 6.35 -19.05 0.15 21
+DS -8.89 -19.05 -8.89 16.51 0.15 21
+DS -8.89 16.51 -6.35 16.51 0.15 21
+DS -6.35 16.51 -6.35 -19.05 0.15 21
+DS -6.35 -19.05 -8.89 -19.05 0.15 21
+$PAD
+Sh "1" R 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -17.78
+$EndPAD
+$PAD
+Sh "2" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -15.24
+$EndPAD
+$PAD
+Sh "3" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -12.7
+$EndPAD
+$PAD
+Sh "4" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -10.16
+$EndPAD
+$PAD
+Sh "5" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -7.62
+$EndPAD
+$PAD
+Sh "6" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -5.08
+$EndPAD
+$PAD
+Sh "7" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 -2.54
+$EndPAD
+$PAD
+Sh "8" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 0
+$EndPAD
+$PAD
+Sh "9" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 2.54
+$EndPAD
+$PAD
+Sh "10" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 5.08
+$EndPAD
+$PAD
+Sh "11" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 7.62
+$EndPAD
+$PAD
+Sh "12" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 10.16
+$EndPAD
+$PAD
+Sh "13" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 12.7
+$EndPAD
+$PAD
+Sh "14" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.62 15.24
+$EndPAD
+$PAD
+Sh "15" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 15.24
+$EndPAD
+$PAD
+Sh "16" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 12.7
+$EndPAD
+$PAD
+Sh "17" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 10.16
+$EndPAD
+$PAD
+Sh "18" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 7.62
+$EndPAD
+$PAD
+Sh "19" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 5.08
+$EndPAD
+$PAD
+Sh "20" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 2.54
+$EndPAD
+$PAD
+Sh "21" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 0
+$EndPAD
+$PAD
+Sh "22" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -2.54
+$EndPAD
+$PAD
+Sh "23" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -5.08
+$EndPAD
+$PAD
+Sh "24" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -7.62
+$EndPAD
+$PAD
+Sh "25" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -10.16
+$EndPAD
+$PAD
+Sh "26" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -12.7
+$EndPAD
+$PAD
+Sh "27" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -15.24
+$EndPAD
+$PAD
+Sh "28" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.62 -17.78
+$EndPAD
+$PAD
+Sh "34" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5.08 -5.08
+$EndPAD
+$PAD
+Sh "35" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5.08 -7.62
+$EndPAD
+$PAD
+Sh "36" C 2 2 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5.08 -10.16
+$EndPAD
+$EndMODULE Board_Teensy_3_1_w_side_pins
 $MODULE Connector_PH_CONN_S2B-PH-SM4
 Po 0 0 0 15 550764BC 00000000 ~~
 Li Connector_PH_CONN_S2B-PH-SM4
