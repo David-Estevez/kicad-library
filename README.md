@@ -14,7 +14,9 @@ Author: David Estevez Fernandez (DEF)
 | board_arietta_g25.lib | Symbol for [Arietta G25 board](www.acmesystems.it/arietta) |
 | board_arietta_g25_debug_port.lib | Symbol for [Arietta G25 board](www.acmesystems.it/arietta) with debug port |
 | teensy_3_1.lib | Symbol for [Teensy 3.1](http://www.pjrc.com/teensy/teensy31.html) |
-| teensy_3_1_extended.lib | Symbol for [Teensy 3.1](http://www.pjrc.com/teensy/teensy31.html), including frontal pins |
+| teensy_3_1_extended.lib | Symbol for [Teensy 3.1](http://www.pjrc.com/teensy/teensy31.html), including frontal and side extra pins |
+| teensy_3_1_w_front_pins.kicad_mod | Symbol for [Teensy 3.1](http://www.pjrc.com/teensy/teensy31.html), including frontal pins |
+| teensy_3_1_w_side_pins.kicad_mod | Symbol for [Teensy 3.1](http://www.pjrc.com/teensy/teensy31.html), including side extra pins |
 
 ## Connectors ##
 | Name | Description |
@@ -60,6 +62,10 @@ Note: Arietta G25 footprints are not tested
 |------|-------------|
 | Board_Arietta_G25.kicad_mod | [Arietta G25 board](www.acmesystems.it/arietta)  |
 | Board_Arietta_G25_Debug_Port.kicad_mod | [Arietta G25 board](www.acmesystems.it/arietta) with debug port  |
+| Board_Teensy_3_1.kicad_mod | [Teensy 3.1](http://www.pjrc.com/teensy/teensy31.html) |
+| Board_Teensy_3_1_extended.kicad_mod | [Teensy 3.1](http://www.pjrc.com/teensy/teensy31.html) |
+| Board_Teensy_3_1_w_front_pins.kicad_mod | [Teensy 3.1](http://www.pjrc.com/teensy/teensy31.html) |
+| Board_Teensy_3_1_w_side_pins.kicad_mod | [Teensy 3.1](http://www.pjrc.com/teensy/teensy31.html) |
 
 ## Connectors ##
 | Name | Original Component |
