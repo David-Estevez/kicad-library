@@ -9,10 +9,18 @@ class KicadBoard:
 
 
     def add_rect_outline(self, width, height, corner_round_radius = 0, line_width = 0.2):
+        return self.add_rect_outline_at_point((0,0), width, height, corner_round_radius, line_width)
+
+    def add_rect_outline_at_point(self, center_point, width, height, corner_round_radius = 0, line_width = 0.2):
         outline = []
 
         # Generate corners:
-        corners = [ [0,0], [width, 0], [width, height], [0, height]]
+        corners = [ [-width / 2.0,-height/2.0], [width/2.0, -height/2.0], [width/2.0, height/2.0], [-width/2.0, height/2.0]]
+
+        # Apply offset:
+        for i in range(len(corners)):
+            corners[i][0] += center_point[0]
+            corners[i][1] += center_point[1]
 
         if corner_round_radius > 0:
             # Do outline with curved corners
