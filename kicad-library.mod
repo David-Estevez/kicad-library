@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  jue 26 mar 2015 12:33:49 CET
+PCBNEW-LibModule-V1  lun 30 mar 2015 11:42:18 CEST
 # encoding utf-8
 Units mm
 $INDEX
@@ -21,6 +21,7 @@ IC_MPU-6050
 IC_SON-10
 IC_TSSOP-16
 MISC_ENCODER_5_PINS
+Mechanical_drill_3mm
 Passives_1411
 Passives_DO-214AC
 Passives_Inductor-4x4mm
@@ -2362,6 +2363,22 @@ Ne 0 ""
 Po 0 6.2
 $EndPAD
 $EndMODULE MISC_ENCODER_5_PINS
+$MODULE Mechanical_drill_3mm
+Po 0 0 0 15 55191A38 00000000 ~~
+Li Mechanical_drill_3mm
+Sc 0
+AR 
+Op 0 0 0
+T0 0.635 3.175 1 1 0 0.15 N I 21 N "Mechanical_drill_3mm"
+T1 4.445 1.27 1 1 0 0.15 N I 21 N ""
+$PAD
+Sh "" C 3 3 0 0 0
+Dr 3 0 0
+At HOLE N 00C0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE Mechanical_drill_3mm
 $MODULE Passives_1411
 Po 0 0 0 15 5507622C 00000000 ~~
 Li Passives_1411
