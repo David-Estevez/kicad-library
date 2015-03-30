@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  lun 30 mar 2015 11:42:18 CEST
+PCBNEW-LibModule-V1  lun 30 mar 2015 12:15:27 CEST
 # encoding utf-8
 Units mm
 $INDEX
@@ -22,6 +22,7 @@ IC_SON-10
 IC_TSSOP-16
 MISC_ENCODER_5_PINS
 Mechanical_drill_3mm
+Misc_Encoder_5_Pins_w_shield
 Passives_1411
 Passives_DO-214AC
 Passives_Inductor-4x4mm
@@ -2379,6 +2380,75 @@ Ne 0 ""
 Po 0 0
 $EndPAD
 $EndMODULE Mechanical_drill_3mm
+$MODULE Misc_Encoder_5_Pins_w_shield
+Po 0 0 0 15 551921F4 00000000 ~~
+Li Misc_Encoder_5_Pins_w_shield
+Sc 0
+AR 
+Op 0 0 0
+T0 -5.842 9.144 1 1 0 0.15 N V 21 N "ENCODER_5_PINS"
+T1 5.588 9.144 1 1 0 0.15 N V 21 N "VAL**"
+DS 7.62 -6.604 7.62 -3.81 0.15 21
+DS 7.62 1.27 7.62 -1.27 0.15 21
+DS 7.62 3.81 7.62 6.604 0.15 21
+DS -6.858 6.604 -1.778 6.604 0.15 21
+DS -6.858 3.81 -6.858 6.604 0.15 21
+DS -6.858 -6.604 -6.858 -3.81 0.15 21
+DC 0 0 -0.508 -1.778 0.15 21
+DC 0 0 -1.27 -3.048 0.15 21
+DS 7.62 6.604 1.778 6.604 0.15 21
+DS 1.778 -6.604 7.62 -6.604 0.15 21
+DS -6.858 -6.604 -1.778 -6.604 0.15 21
+$PAD
+Sh "1" C 1.5 1.5 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7 -2.5
+$EndPAD
+$PAD
+Sh "2" C 1.5 1.5 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7 0
+$EndPAD
+$PAD
+Sh "3" C 1.5 1.5 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7 2.5
+$EndPAD
+$PAD
+Sh "4" C 1.5 1.5 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.5 -2.5
+$EndPAD
+$PAD
+Sh "5" C 1.5 1.5 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.5 2.5
+$EndPAD
+$PAD
+Sh "SHLD" C 2.5 2.5 0 0 0
+Dr 2.1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 -6.6
+$EndPAD
+$PAD
+Sh "SHLD" C 2.5 2.5 0 0 0
+Dr 2.1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 6.2
+$EndPAD
+$EndMODULE Misc_Encoder_5_Pins_w_shield
 $MODULE Passives_1411
 Po 0 0 0 15 5507622C 00000000 ~~
 Li Passives_1411

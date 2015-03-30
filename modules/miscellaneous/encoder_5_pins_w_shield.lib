@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.3  Date: lun 30 mar 2015 12:18:09 CEST
+#encoding utf-8
+#
+# Encoder_5_Pins_w_shield
+#
+DEF Encoder_5_Pins_w_shield EN 0 40 Y Y 1 F N
+F0 "EN" 150 300 60 H V C CNN
+F1 "Encoder_5_Pins_w_shield" 0 -300 60 H V C CNN
+F2 "~" 0 0 60 H V C CNN
+F3 "~" 0 0 60 H V C CNN
+DRAW
+S -200 200 200 -200 0 1 0 N
+P 3 0 1 0  100 100  100 150  200 150 N
+P 4 0 1 0  200 -50  100 -50  100 0  50 100 N
+X A 1 -500 100 300 R 50 50 1 1 B
+X C 2 -500 0 300 R 50 50 1 1 B
+X B 3 -500 -100 300 R 50 50 1 1 B
+X ~ 4 500 150 300 L 50 50 1 1 B
+X ~ 5 500 -50 300 L 50 50 1 1 B
+X ~ SHLD 500 -150 300 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
