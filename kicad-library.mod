@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  lun 30 mar 2015 12:15:27 CEST
+PCBNEW-LibModule-V1  mar 07 abr 2015 20:49:15 CEST
 # encoding utf-8
 Units mm
 $INDEX
@@ -6,6 +6,7 @@ Board_Teensy_3_1
 Board_Teensy_3_1_extended
 Board_Teensy_3_1_w_front_pins
 Board_Teensy_3_1_w_side_pins
+Conn_Jack_Female_635_THD
 Connector_PH_CONN_S2B-PH-SM4
 Connector_XBee-20Pin
 Connector_ZH_CONN-B5B-ZR-SM4-TF
@@ -1020,6 +1021,64 @@ Ne 0 ""
 Po 5.08 -10.16
 $EndPAD
 $EndMODULE Board_Teensy_3_1_w_side_pins
+$MODULE Conn_Jack_Female_635_THD
+Po 0 0 0 15 552426A4 00000000 ~~
+Li Conn_Jack_Female_635_THD
+Sc 0
+AR 
+Op 0 0 0
+T0 0 4.318 1 1 0 0.15 N V 21 N "Jack_Female_635_THD"
+T1 0 -5.588 1 1 0 0.15 N V 21 N "VAL**"
+DS -10.5 10 -18.5 10 0.15 21
+DS -18.5 10 -18.5 -10 0.15 21
+DS -18.5 -10 -10.5 -10 0.15 21
+DS 10.5 -10 -10.5 -10 0.15 21
+DS -10.5 -10 -10.5 10 0.15 21
+DS -10.5 10 10.5 10 0.15 21
+DS 10.5 10 10.5 -10 0.15 21
+$PAD
+Sh "1" C 2.5 2.5 0 0 0
+Dr 2.1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.3 -8.1
+$EndPAD
+$PAD
+Sh "2" C 2.5 2.5 0 0 0
+Dr 2.1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 -8.1
+$EndPAD
+$PAD
+Sh "3" C 2.5 2.5 0 0 0
+Dr 2.1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.3 -8.1
+$EndPAD
+$PAD
+Sh "4" C 2.5 2.5 0 0 0
+Dr 2.1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.3 8.1
+$EndPAD
+$PAD
+Sh "5" C 2.5 2.5 0 0 0
+Dr 2.1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 8.1
+$EndPAD
+$PAD
+Sh "6" C 2.5 2.5 0 0 0
+Dr 2.1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.3 8.1
+$EndPAD
+$EndMODULE Conn_Jack_Female_635_THD
 $MODULE Connector_PH_CONN_S2B-PH-SM4
 Po 0 0 0 15 550764BC 00000000 ~~
 Li Connector_PH_CONN_S2B-PH-SM4
