@@ -1,7 +1,8 @@
-PCBNEW-LibModule-V1  mar 07 abr 2015 20:49:15 CEST
+PCBNEW-LibModule-V1  lun 13 abr 2015 00:59:05 CEST
 # encoding utf-8
 Units mm
 $INDEX
+BOURNS_PTV09A
 Board_Teensy_3_1
 Board_Teensy_3_1_extended
 Board_Teensy_3_1_w_front_pins
@@ -37,6 +38,62 @@ SOT-23-5
 SOT-23-generic
 Switches-Push_switch_THD
 $EndINDEX
+$MODULE BOURNS_PTV09A
+Po 0 0 0 15 552AF49D 00000000 ~~
+Li BOURNS_PTV09A
+Sc 0
+AR 
+Op 0 0 0
+T0 -1.27 13.97 1 1 0 0.15 N V 21 N "BOURNS PTV09A"
+T1 -5.08 10.16 1 1 0 0.15 N V 21 N "POT**"
+DC 3.9 4.5 3.9 5 0.15 21
+DC -3.9 -4.5 -3.9 -5 0.15 21
+DS 4.5 5.5 4 6 0.15 21
+DS 4 6 -4 6 0.15 21
+DS -4 6 -4.5 5.5 0.15 21
+DC 0 0 -2.5 0 0.15 21
+DC 0 0 -3 0 0.15 21
+DS 0 -5.5 4.9 -5.5 0.15 21
+DS 4.9 -5.5 4.9 5.5 0.15 21
+DS 4.9 5.5 -4.9 5.5 0.15 21
+DS -4.9 5.5 -4.9 -5.5 0.15 21
+DS -4.9 -5.5 0 -5.5 0.15 21
+$PAD
+Sh "1" O 1.5 2.5 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2.5 7
+$EndPAD
+$PAD
+Sh "2" O 1.5 2.5 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 7
+$EndPAD
+$PAD
+Sh "3" O 1.5 2.5 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2.5 7
+$EndPAD
+$PAD
+Sh "4" O 1.9 3 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5.3 0
+$EndPAD
+$PAD
+Sh "6" O 1.9 3 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -5.3 0
+$EndPAD
+$EndMODULE BOURNS_PTV09A
 $MODULE Board_Teensy_3_1
 Po 0 0 0 15 5509AE9B 00000000 ~~
 Li Board_Teensy_3_1
