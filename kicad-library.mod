@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  lun 13 abr 2015 00:59:05 CEST
+PCBNEW-LibModule-V1  sáb 18 abr 2015 19:52:42 CEST
 # encoding utf-8
 Units mm
 $INDEX
@@ -1079,7 +1079,7 @@ Po 5.08 -10.16
 $EndPAD
 $EndMODULE Board_Teensy_3_1_w_side_pins
 $MODULE Conn_Jack_Female_635_THD
-Po 0 0 0 15 552426A4 00000000 ~~
+Po 0 0 0 15 5532955B 00000000 ~~
 Li Conn_Jack_Female_635_THD
 Sc 0
 AR 
@@ -1094,42 +1094,42 @@ DS -10.5 -10 -10.5 10 0.15 21
 DS -10.5 10 10.5 10 0.15 21
 DS 10.5 10 10.5 -10 0.15 21
 $PAD
-Sh "1" C 2.5 2.5 0 0 0
+Sh "S" C 2.5 2.5 0 0 0
 Dr 2.1 0 0
 At STD N 00E0FFFF
 Ne 0 ""
 Po -6.3 -8.1
 $EndPAD
 $PAD
-Sh "2" C 2.5 2.5 0 0 0
+Sh "R" C 2.5 2.5 0 0 0
 Dr 2.1 0 0
 At STD N 00E0FFFF
 Ne 0 ""
 Po 0 -8.1
 $EndPAD
 $PAD
-Sh "3" C 2.5 2.5 0 0 0
+Sh "T" C 2.5 2.5 0 0 0
 Dr 2.1 0 0
 At STD N 00E0FFFF
 Ne 0 ""
 Po 6.3 -8.1
 $EndPAD
 $PAD
-Sh "4" C 2.5 2.5 0 0 0
+Sh "SS" C 2.5 2.5 0 0 0
 Dr 2.1 0 0
 At STD N 00E0FFFF
 Ne 0 ""
 Po -6.3 8.1
 $EndPAD
 $PAD
-Sh "5" C 2.5 2.5 0 0 0
+Sh "RS" C 2.5 2.5 0 0 0
 Dr 2.1 0 0
 At STD N 00E0FFFF
 Ne 0 ""
 Po 0 8.1
 $EndPAD
 $PAD
-Sh "6" C 2.5 2.5 0 0 0
+Sh "TS" C 2.5 2.5 0 0 0
 Dr 2.1 0 0
 At STD N 00E0FFFF
 Ne 0 ""
