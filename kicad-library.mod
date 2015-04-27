@@ -1,8 +1,9 @@
-PCBNEW-LibModule-V1  sáb 18 abr 2015 19:52:42 CEST
+PCBNEW-LibModule-V1  lun 27 abr 2015 13:41:36 CEST
 # encoding utf-8
 Units mm
 $INDEX
 BOURNS_PTV09A
+Board_ESP8266_01
 Board_Teensy_3_1
 Board_Teensy_3_1_extended
 Board_Teensy_3_1_w_front_pins
@@ -94,6 +95,83 @@ Ne 0 ""
 Po -5.3 0
 $EndPAD
 $EndMODULE BOURNS_PTV09A
+$MODULE Board_ESP8266_01
+Po 0 0 0 15 553E2051 00000000 ~~
+Li Board_ESP8266_01
+Sc 0
+AR 
+Op 0 0 0
+T0 -5 4.25 1.016 1.016 0 0.2032 N V 21 N "BOARD_ESP8266_01"
+T1 6 4.25 1.016 1.016 0 0.2032 N I 21 N "Val**"
+DS -5.08 -11.43 5.08 -11.43 0.15 21
+DS 5.08 2.54 5.08 -20.32 0.15 21
+DS 5.08 -20.32 -5.08 -20.32 0.15 21
+DS -5.08 -20.32 -5.08 2.54 0.15 21
+DS 5.08 -2.54 -5.08 -2.54 0.15 21
+DS 5.08 2.54 -5.08 2.54 0.15 21
+$PAD
+Sh "1" R 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3.81 1.27
+$EndPAD
+$PAD
+Sh "2" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3.81 -1.27
+$EndPAD
+$PAD
+Sh "3" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1.27 1.27
+$EndPAD
+$PAD
+Sh "4" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1.27 -1.27
+$EndPAD
+$PAD
+Sh "5" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1.27 1.27
+$EndPAD
+$PAD
+Sh "6" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1.27 -1.27
+$EndPAD
+$PAD
+Sh "7" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3.81 1.27
+$EndPAD
+$PAD
+Sh "8" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3.81 -1.27
+$EndPAD
+$SHAPE3D
+Na "pin_array/pins_array_4x2.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE Board_ESP8266_01
 $MODULE Board_Teensy_3_1
 Po 0 0 0 15 5509AE9B 00000000 ~~
 Li Board_Teensy_3_1
