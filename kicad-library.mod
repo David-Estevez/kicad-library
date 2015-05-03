@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  mar 28 abr 2015 15:24:28 CEST
+PCBNEW-LibModule-V1  dom 03 may 2015 16:26:44 CEST
 # encoding utf-8
 Units mm
 $INDEX
@@ -42,6 +42,7 @@ SOT-23
 SOT-23-3
 SOT-23-5
 SOT-23-generic
+Switch_Stomp_3PDT
 Switches-Push_switch_THD
 $EndINDEX
 $MODULE BOURNS_PTV09A
@@ -4472,6 +4473,93 @@ Ne 0 ""
 Po 0.95 0.885
 $EndPAD
 $EndMODULE SOT-23-generic
+$MODULE Switch_Stomp_3PDT
+Po 0 0 0 15 55463011 00000000 ~~
+Li Switch_Stomp_3PDT
+Sc 0
+AR 
+Op 0 0 0
+T0 0 11 1 1 0 0.15 N V 21 N "3PDT"
+T1 0 13 1 1 0 0.15 N V 21 N "VAL**"
+DS 7 2.5 -7 2.5 0.15 21
+DS -7 -2.5 7 -2.5 0.15 21
+DS 2.5 7 2.5 -7 0.15 21
+DS -2.5 -7 -2.5 7 0.15 21
+DS -9 8.5 -9.8 8.5 0.15 21
+DS -9.8 8.5 -9.8 -8.5 0.15 21
+DS -9.8 -8.5 -9 -8.5 0.15 21
+DS 9.8 8.5 9 8.5 0.15 21
+DS 9.8 8.5 9.8 -8.5 0.15 21
+DS 9.8 -8.5 9 -8.5 0.15 21
+DS -9 8.5 -9 -8.5 0.15 21
+DS -9 -8.5 9 -8.5 0.15 21
+DS 9 -8.5 9 0 0.15 21
+DS -9 8.5 9 8.5 0.15 21
+DS 9 8.5 9 0 0.15 21
+$PAD
+Sh "8" O 2.5 3 0 0 0
+Dr 2.5 0 0 O 2.5 1
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 5
+$EndPAD
+$PAD
+Sh "2" O 2.5 3 0 0 0
+Dr 2.5 0 0 O 2.5 1
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 -5
+$EndPAD
+$PAD
+Sh "3" O 2.5 3 0 0 0
+Dr 2.5 0 0 O 2.5 1
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5 -5
+$EndPAD
+$PAD
+Sh "9" O 2.5 3 0 0 0
+Dr 2.5 0 0 O 2.5 1
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5 5
+$EndPAD
+$PAD
+Sh "7" O 2.5 3 0 0 0
+Dr 2.5 0 0 O 2.5 1
+At STD N 00E0FFFF
+Ne 0 ""
+Po -5 5
+$EndPAD
+$PAD
+Sh "1" O 2.5 3 0 0 0
+Dr 2.5 0 0 O 2.5 1
+At STD N 00E0FFFF
+Ne 0 ""
+Po -5 -5
+$EndPAD
+$PAD
+Sh "4" O 2.5 3 0 0 0
+Dr 2.5 0 0 O 2.5 1
+At STD N 00E0FFFF
+Ne 0 ""
+Po -5 0
+$EndPAD
+$PAD
+Sh "5" O 2.5 3 0 0 0
+Dr 2.5 0 0 O 2.5 1
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$PAD
+Sh "6" O 2.5 3 0 0 0
+Dr 2.5 0 0 O 2.5 1
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5 0
+$EndPAD
+$EndMODULE Switch_Stomp_3PDT
 $MODULE Switches-Push_switch_THD
 Po 0 0 0 15 5513EE8F 00000000 ~~
 Li Switches-Push_switch_THD
