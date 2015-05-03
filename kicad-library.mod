@@ -2,7 +2,7 @@ PCBNEW-LibModule-V1  dom 03 may 2015 16:26:44 CEST
 # encoding utf-8
 Units mm
 $INDEX
-BOURNS_PTV09A
+Passives_BOURNS_PTV09A
 Board_Arietta_G25
 Board_Arietta_G25_Debug_Port
 Board_Arietta_G25_Debug_Port_w_Drills
@@ -42,12 +42,12 @@ SOT-23
 SOT-23-3
 SOT-23-5
 SOT-23-generic
-Switch_Stomp_3PDT
+Switches_Stomp_3PDT
 Switches-Push_switch_THD
 $EndINDEX
-$MODULE BOURNS_PTV09A
+$MODULE Passives_BOURNS_PTV09A
 Po 0 0 0 15 552AF49D 00000000 ~~
-Li BOURNS_PTV09A
+Li Passives_BOURNS_PTV09A
 Sc 0
 AR 
 Op 0 0 0
@@ -100,7 +100,7 @@ At STD N 00E0FFFF
 Ne 0 ""
 Po -5.3 0
 $EndPAD
-$EndMODULE BOURNS_PTV09A
+$EndMODULE Passives_BOURNS_PTV09A
 $MODULE Board_Arietta_G25
 Po 0 0 0 15 553F89E8 00000000 ~~
 Li Board_Arietta_G25
@@ -4473,9 +4473,9 @@ Ne 0 ""
 Po 0.95 0.885
 $EndPAD
 $EndMODULE SOT-23-generic
-$MODULE Switch_Stomp_3PDT
+$MODULE Switches_Stomp_3PDT
 Po 0 0 0 15 55463011 00000000 ~~
-Li Switch_Stomp_3PDT
+Li Switches_Stomp_3PDT
 Sc 0
 AR 
 Op 0 0 0
@@ -4559,7 +4559,7 @@ At STD N 00E0FFFF
 Ne 0 ""
 Po 5 0
 $EndPAD
-$EndMODULE Switch_Stomp_3PDT
+$EndMODULE Switches_Stomp_3PDT
 $MODULE Switches-Push_switch_THD
 Po 0 0 0 15 5513EE8F 00000000 ~~
 Li Switches-Push_switch_THD
