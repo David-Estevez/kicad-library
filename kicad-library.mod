@@ -1,8 +1,7 @@
-PCBNEW-LibModule-V1  dom 03 may 2015 16:26:44 CEST
+PCBNEW-LibModule-V1  dom 03 may 2015 17:13:41 CEST
 # encoding utf-8
 Units mm
 $INDEX
-Passives_BOURNS_PTV09A
 Board_Arietta_G25
 Board_Arietta_G25_Debug_Port
 Board_Arietta_G25_Debug_Port_w_Drills
@@ -32,6 +31,7 @@ MISC_ENCODER_5_PINS
 Mechanical_drill_3mm
 Misc_Encoder_5_Pins_w_shield
 Passives_1411
+Passives_BOURNS_PTV09A
 Passives_DO-214AC
 Passives_Inductor-4x4mm
 Passives_SOD-106
@@ -42,65 +42,9 @@ SOT-23
 SOT-23-3
 SOT-23-5
 SOT-23-generic
-Switches_Stomp_3PDT
 Switches-Push_switch_THD
+Switches_Stomp_3PDT
 $EndINDEX
-$MODULE Passives_BOURNS_PTV09A
-Po 0 0 0 15 552AF49D 00000000 ~~
-Li Passives_BOURNS_PTV09A
-Sc 0
-AR 
-Op 0 0 0
-T0 -1.27 13.97 1 1 0 0.15 N V 21 N "BOURNS PTV09A"
-T1 -5.08 10.16 1 1 0 0.15 N V 21 N "POT**"
-DC 3.9 4.5 3.9 5 0.15 21
-DC -3.9 -4.5 -3.9 -5 0.15 21
-DS 4.5 5.5 4 6 0.15 21
-DS 4 6 -4 6 0.15 21
-DS -4 6 -4.5 5.5 0.15 21
-DC 0 0 -2.5 0 0.15 21
-DC 0 0 -3 0 0.15 21
-DS 0 -5.5 4.9 -5.5 0.15 21
-DS 4.9 -5.5 4.9 5.5 0.15 21
-DS 4.9 5.5 -4.9 5.5 0.15 21
-DS -4.9 5.5 -4.9 -5.5 0.15 21
-DS -4.9 -5.5 0 -5.5 0.15 21
-$PAD
-Sh "1" O 1.5 2.5 0 0 0
-Dr 1 0 0
-At STD N 00E0FFFF
-Ne 0 ""
-Po -2.5 7
-$EndPAD
-$PAD
-Sh "2" O 1.5 2.5 0 0 0
-Dr 1 0 0
-At STD N 00E0FFFF
-Ne 0 ""
-Po 0 7
-$EndPAD
-$PAD
-Sh "3" O 1.5 2.5 0 0 0
-Dr 1 0 0
-At STD N 00E0FFFF
-Ne 0 ""
-Po 2.5 7
-$EndPAD
-$PAD
-Sh "4" O 1.9 3 0 0 0
-Dr 1.5 0 0
-At STD N 00E0FFFF
-Ne 0 ""
-Po 5.3 0
-$EndPAD
-$PAD
-Sh "6" O 1.9 3 0 0 0
-Dr 1.5 0 0
-At STD N 00E0FFFF
-Ne 0 ""
-Po -5.3 0
-$EndPAD
-$EndMODULE Passives_BOURNS_PTV09A
 $MODULE Board_Arietta_G25
 Po 0 0 0 15 553F89E8 00000000 ~~
 Li Board_Arietta_G25
@@ -4069,6 +4013,62 @@ Ne 0 ""
 Po 1.56 0
 $EndPAD
 $EndMODULE Passives_1411
+$MODULE Passives_BOURNS_PTV09A
+Po 0 0 0 15 55463B21 00000000 ~~
+Li Passives_BOURNS_PTV09A
+Sc 0
+AR 
+Op 0 0 0
+T0 -1.27 13.97 1 1 0 0.15 N V 21 N "BOURNS PTV09A"
+T1 -5.08 10.16 1 1 0 0.15 N V 21 N "POT**"
+DC 3.9 4.5 3.9 5 0.15 21
+DC -3.9 -4.5 -3.9 -5 0.15 21
+DS 4.5 5.5 4 6 0.15 21
+DS 4 6 -4 6 0.15 21
+DS -4 6 -4.5 5.5 0.15 21
+DC 0 0 -2.5 0 0.15 21
+DC 0 0 -3 0 0.15 21
+DS 0 -5.5 4.9 -5.5 0.15 21
+DS 4.9 -5.5 4.9 5.5 0.15 21
+DS 4.9 5.5 -4.9 5.5 0.15 21
+DS -4.9 5.5 -4.9 -5.5 0.15 21
+DS -4.9 -5.5 0 -5.5 0.15 21
+$PAD
+Sh "1" O 1.5 2.5 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2.5 7
+$EndPAD
+$PAD
+Sh "2" O 1.5 2.5 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 7
+$EndPAD
+$PAD
+Sh "3" O 1.5 2.5 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2.5 7
+$EndPAD
+$PAD
+Sh "SHLD" O 1.9 3 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5.3 0
+$EndPAD
+$PAD
+Sh "SHLD" O 1.9 3 0 0 0
+Dr 1.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -5.3 0
+$EndPAD
+$EndMODULE Passives_BOURNS_PTV09A
 $MODULE Passives_DO-214AC
 Po 0 0 0 15 55076230 00000000 ~~
 Li Passives_DO-214AC
@@ -4473,6 +4473,48 @@ Ne 0 ""
 Po 0.95 0.885
 $EndPAD
 $EndMODULE SOT-23-generic
+$MODULE Switches-Push_switch_THD
+Po 0 0 0 15 5513EE8F 00000000 ~~
+Li Switches-Push_switch_THD
+Sc 0
+AR 
+Op 0 0 0
+T0 0 4.572 1 1 0 0.15 N V 21 N "Switches-Push_switch_THD"
+T1 -6.096 -5.588 1 1 0 0.15 N V 21 N "VAL**"
+DS -2.54 -2.54 2.54 -2.54 0.15 21
+DS 2.54 -2.54 2.54 2.54 0.15 21
+DS 2.54 2.54 -2.54 2.54 0.15 21
+DS -2.54 2.54 -2.54 -2.54 0.15 21
+DC 0 0 -1.27 -1.27 0.15 21
+$PAD
+Sh "2" O 1.9 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3.81 2.54
+$EndPAD
+$PAD
+Sh "1" O 1.9 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3.81 -2.54
+$EndPAD
+$PAD
+Sh "4" O 1.9 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3.81 2.54
+$EndPAD
+$PAD
+Sh "3" O 1.9 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3.81 -2.54
+$EndPAD
+$EndMODULE Switches-Push_switch_THD
 $MODULE Switches_Stomp_3PDT
 Po 0 0 0 15 55463011 00000000 ~~
 Li Switches_Stomp_3PDT
@@ -4560,46 +4602,4 @@ Ne 0 ""
 Po 5 0
 $EndPAD
 $EndMODULE Switches_Stomp_3PDT
-$MODULE Switches-Push_switch_THD
-Po 0 0 0 15 5513EE8F 00000000 ~~
-Li Switches-Push_switch_THD
-Sc 0
-AR 
-Op 0 0 0
-T0 0 4.572 1 1 0 0.15 N V 21 N "Switches-Push_switch_THD"
-T1 -6.096 -5.588 1 1 0 0.15 N V 21 N "VAL**"
-DS -2.54 -2.54 2.54 -2.54 0.15 21
-DS 2.54 -2.54 2.54 2.54 0.15 21
-DS 2.54 2.54 -2.54 2.54 0.15 21
-DS -2.54 2.54 -2.54 -2.54 0.15 21
-DC 0 0 -1.27 -1.27 0.15 21
-$PAD
-Sh "2" O 1.9 1.5 0 0 0
-Dr 0.8 0 0
-At STD N 00E0FFFF
-Ne 0 ""
-Po -3.81 2.54
-$EndPAD
-$PAD
-Sh "1" O 1.9 1.5 0 0 0
-Dr 0.8 0 0
-At STD N 00E0FFFF
-Ne 0 ""
-Po -3.81 -2.54
-$EndPAD
-$PAD
-Sh "4" O 1.9 1.5 0 0 0
-Dr 0.8 0 0
-At STD N 00E0FFFF
-Ne 0 ""
-Po 3.81 2.54
-$EndPAD
-$PAD
-Sh "3" O 1.9 1.5 0 0 0
-Dr 0.8 0 0
-At STD N 00E0FFFF
-Ne 0 ""
-Po 3.81 -2.54
-$EndPAD
-$EndMODULE Switches-Push_switch_THD
 $EndLIBRARY
