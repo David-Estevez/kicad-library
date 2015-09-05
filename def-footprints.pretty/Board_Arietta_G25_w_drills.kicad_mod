@@ -1,4 +1,4 @@
-(module Board_Arietta_G25 (layer F.Cu)
+(module Board_Arietta_G25_w_drills (layer F.Cu)
   (at 0 0)
   (fp_text reference Board_Arietta_G25 (at 7.62 30.48) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
