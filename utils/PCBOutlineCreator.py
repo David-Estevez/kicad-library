@@ -26,45 +26,84 @@ def load_ui(file_name, where=None):
 
 class PCBOutlineCreator(QtGui.QWidget):
     def __init__(self, parent=None):
-        # Call the constructor to create the C++ object instance and avoid errors (that happen sometimes)
         QtGui.QWidget.__init__(self, parent)
+        self.setupUI()
+        self.resetValues()
 
-        # Load the UI on this class
+
+    def setupUI(self):
+        # Load UI and set it as main layout
         ui_file_path = os.path.join(os.path.realpath(os.path.dirname(__file__)), 'PCBOutlineCreator.ui')
-        load_ui(ui_file_path, self)
-        self.main_widget = self.findChild(QtGui.QWidget)
+        main_widget = load_ui(ui_file_path, self)
+        layout = QtGui.QVBoxLayout()
+        layout.addWidget(main_widget)
+        self.setLayout(layout)
 
-        # Connect callbacks
-        self.main_widget.inputFileButton.clicked.connect(self.onInputFileButtonClicked)
 
-        # Configure control ranges:
+        # Get a reference to all required widgets
+        self.inputFileButton = self.findChild(QtGui.QToolButton, 'inputFileButton')
+        self.inputFileLineEdit = self.findChild(QtGui.QLineEdit, 'inputFileLineEdit')
+        self.exportButton = self.findChild(QtGui.QPushButton, 'exportButton')
+        self.saveButton = self.findChild(QtGui.QPushButton, 'saveButton')
+        self.lengthSpinBox = self.findChild(QtGui.QDoubleSpinBox, 'lengthSpinBox')
+        self.widthSpinBox = self.findChild(QtGui.QDoubleSpinBox, 'widthSpinBox')
+        self.lineWidthSpinBox = self.findChild(QtGui.QDoubleSpinBox, 'lineWidthSpinBox')
+        self.cornersSpinBox = self.findChild(QtGui.QDoubleSpinBox, 'cornersSpinBox')
+        self.cornersCheckBox = self.findChild(QtGui.QCheckBox, 'cornersCheckBox')
+        self.xSpinBox = self.findChild(QtGui.QDoubleSpinBox, 'xSpinBox')
+        self.ySpinBox = self.findChild(QtGui.QDoubleSpinBox, 'ySpinBox')
+
+        # Configure widget ranges:
         max_float = sys.float_info.max
-        self.main_widget.lengthSpinBox.setMinimum(0)
-        self.main_widget.lengthSpinBox.setMaximum(max_float)
-        self.main_widget.widthSpinBox.setMinimum(0)
-        self.main_widget.widthSpinBox.setMaximum(max_float)
-        self.main_widget.lineWidthSpinBox.setMinimum(0)
-        self.main_widget.lineWidthSpinBox.setMaximum(max_float)
-        self.main_widget.lineWidthSpinBox.setSingleStep(0.1)
-        self.main_widget.cornersSpinBox.setMinimum(0)
-        self.main_widget.cornersSpinBox.setMaximum(max_float)
-        self.main_widget.xSpinBox.setMinimum(0)
-        self.main_widget.xSpinBox.setMaximum(max_float)
-        self.main_widget.ySpinBox.setMinimum(0)
-        self.main_widget.ySpinBox.setMaximum(max_float)
+        self.lengthSpinBox.setMinimum(0)
+        self.lengthSpinBox.setMaximum(max_float)
+        self.widthSpinBox.setMinimum(0)
+        self.widthSpinBox.setMaximum(max_float)
+        self.lineWidthSpinBox.setMinimum(0)
+        self.lineWidthSpinBox.setMaximum(max_float)
+        self.lineWidthSpinBox.setSingleStep(0.1)
+        self.cornersSpinBox.setMinimum(0)
+        self.cornersSpinBox.setMaximum(max_float)
+        self.xSpinBox.setMinimum(-max_float)
+        self.xSpinBox.setMaximum(max_float)
+        self.ySpinBox.setMinimum(-max_float)
+        self.ySpinBox.setMaximum(max_float)
 
-        # Default values
-        self.default()
+        # Connect slots/callbacks and signals
+        self.cornersSpinBox.setEnabled(False)
+        self.cornersCheckBox.stateChanged.connect(self.onCornersCheckBoxChangedState)
+        self.saveButton.clicked.connect(self.onSaveButtonClicked)
 
-    def default(self):
-        self.main_widget.lengthSpinBox.setValue(50)
-        self.main_widget.widthSpinBox.setValue(50)
-        self.main_widget.lineWidthSpinBox.setValue(0.2)
-        self.main_widget.cornersSpinBox.setEnabled(False)
 
-    def onInputFileButtonClicked(self):
-        pass
+    def resetValues(self):
+        self.lengthSpinBox.setValue(50)
+        self.widthSpinBox.setValue(50)
+        self.lineWidthSpinBox.setValue(0.2)
+        self.cornersCheckBox.setChecked(False)
+        self.cornersSpinBox.setValue(5)
+        self.xSpinBox.setValue(0)
+        self.ySpinBox.setValue(0)
 
+    def onCornersCheckBoxChangedState(self, checked):
+        self.cornersSpinBox.setEnabled(bool(checked))
+
+    def onSaveButtonClicked(self):
+        filename = self.inputFileLineEdit.text()
+        length = self.lengthSpinBox.value()
+        width = self.widthSpinBox.value()
+        line_width = self.lineWidthSpinBox.value()
+        rounded = self.cornersCheckBox.isChecked()
+        corners_radius = self.cornersSpinBox.value()
+        x = self.xSpinBox.value()
+        y = self.ySpinBox.value()
+
+        print "Values are: "
+        print "Filename: %s" % filename
+        print "Length: %.2f Width: %.2f" % (length, width)
+        print "Line width: %.2f" % line_width
+        if corners_radius:
+            print "Corner radius: %.2f" % corners_radius
+        print "x: %.2f y: %.2f" % (x, y)
 
 
 if __name__ == '__main__':
