@@ -1,7 +1,21 @@
 #KicadBoard Usage
 ---------------------------
 
-## Creating an outline
+## Using graphical interface
+A graphical interface is now available.
+
+### Dependencies
+Requires python and python-pyside:
+
+    $ sudo apt-get install python python-pyside
+
+### Usage
+
+    $ python PCBOutlineCreator.py
+
+## Using the Python module
+
+### Creating an outline
 Creating a 50x50mm outline with 0.2 line width:
 
     >>> from kicad_board import KicadBoard
