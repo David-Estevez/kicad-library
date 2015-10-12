@@ -1,6 +1,7 @@
 from PySide import QtCore,QtGui
 from PySide import QtUiTools
 import os, sys
+from kicad_board import KicadBoard
 
 def load_ui(file_name, where=None):
     """
@@ -90,28 +91,37 @@ class PCBOutlineCreator(QtGui.QWidget):
         self.cornersSpinBox.setEnabled(bool(checked))
 
     def onSaveButtonClicked(self):
-        reply = QtGui.QMessageBox.question(parent=self, title='Attention',
-                                           text='File will be overwritten.\nDo you still want to proceed?',
-                                           buttons=QtGui.QMessageBox.Yes | QtGui.QMessageBox.No,
-                                           defaultButton=QtGui.QMessageBox.No)
+        filename = self.inputFileLineEdit.text()
 
-        if reply == QtGui.QMessageBox.Yes:
-            filename = self.inputFileLineEdit.text()
-            length = self.lengthSpinBox.value()
-            width = self.widthSpinBox.value()
-            line_width = self.lineWidthSpinBox.value()
-            rounded = self.cornersCheckBox.isChecked()
-            corners_radius = self.cornersSpinBox.value()
-            x = self.xSpinBox.value()
-            y = self.ySpinBox.value()
+        if not filename:
+            QtGui.QMessageBox.warning(self, 'Error', 'No input file was specified!')
+        else:
+            reply = QtGui.QMessageBox.question(self, 'Attention', 'File will be overwritten.\nDo you still want to proceed?',
+                                               QtGui.QMessageBox.Yes | QtGui.QMessageBox.No, QtGui.QMessageBox.No)
 
-            print "Values are: "
-            print "Filename: %s" % filename
-            print "Length: %.2f Width: %.2f" % (length, width)
-            print "Line width: %.2f" % line_width
-            if corners_radius:
-                print "Corner radius: %.2f" % corners_radius
-            print "x: %.2f y: %.2f" % (x, y)
+            if reply == QtGui.QMessageBox.Yes:
+                # Extract values from interface
+                filename = self.inputFileLineEdit.text()
+                length = self.lengthSpinBox.value()
+                width = self.widthSpinBox.value()
+                line_width = self.lineWidthSpinBox.value()
+                rounded = self.cornersCheckBox.isChecked()
+                if rounded:
+                    corners_radius = self.cornersSpinBox.value()
+                else:
+                    corners_radius = 0
+                x = self.xSpinBox.value()
+                y = self.ySpinBox.value()
+
+                # Create a KicadBoard
+                board = KicadBoard(filename)
+
+                # Add outline
+                board.add_rect_outline_at_point((x,y), length, width, corners_radius, line_width)
+
+                # Save result
+                board.save()
+                QtGui.QMessageBox.information(self, 'Done!', 'Operation performed successfully')
 
 
     def onInputFileButtonClicked(self):
@@ -121,13 +131,39 @@ class PCBOutlineCreator(QtGui.QWidget):
             self.inputFileLineEdit.setText(filename)
 
     def onExportButtonClicked(self):
-        filename, filter = QtGui.QFileDialog.getSaveFileName(parent=self, caption='Select output file', dir='.', filter='Kicad PCB Files (*.kicad_pcb)')
+        in_filename = self.inputFileLineEdit.text()
 
-        if filename:
-            if '.kicad_pcb' != filename[:-10]:
-                filename += '.kicad_pcb'
+        if not in_filename:
+            QtGui.QMessageBox.warning(self, 'Error', 'No input file was specified!')
+        else:
+            # Ask for the output filename
+            out_filename, filter = QtGui.QFileDialog.getSaveFileName(parent=self, caption='Select output file', dir='.', filter='Kicad PCB Files (*.kicad_pcb)')
 
-            print filename, filter
+            if out_filename:
+                if '.kicad_pcb' != out_filename[-10:]:
+                    out_filename += '.kicad_pcb'
+
+                # Extract values from interface
+                length = self.lengthSpinBox.value()
+                width = self.widthSpinBox.value()
+                line_width = self.lineWidthSpinBox.value()
+                rounded = self.cornersCheckBox.isChecked()
+                if rounded:
+                    corners_radius = self.cornersSpinBox.value()
+                else:
+                    corners_radius = 0
+                x = self.xSpinBox.value()
+                y = self.ySpinBox.value()
+
+                # Create a KicadBoard
+                board = KicadBoard(in_filename)
+
+                # Add outline
+                board.add_rect_outline_at_point((x,y), length, width, corners_radius, line_width)
+
+                # Save result
+                board.save(out_filename)
+                QtGui.QMessageBox.information(self, 'Done!', 'Operation performed successfully')
 
 
 
