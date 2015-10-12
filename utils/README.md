@@ -13,6 +13,10 @@ Requires python and python-pyside:
 
     $ python PCBOutlineCreator.py
 
+You can also give permissions to execute the file and launch it by double-clicking it on the file explorer:
+
+    $ chmod +x PCBOutlineCreator.py
+
 ## Using the Python module
 
 ### Creating an outline
