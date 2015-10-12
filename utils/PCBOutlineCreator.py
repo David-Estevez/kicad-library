@@ -73,6 +73,8 @@ class PCBOutlineCreator(QtGui.QWidget):
         self.cornersSpinBox.setEnabled(False)
         self.cornersCheckBox.stateChanged.connect(self.onCornersCheckBoxChangedState)
         self.saveButton.clicked.connect(self.onSaveButtonClicked)
+        self.inputFileButton.clicked.connect(self.onInputFileButtonClicked)
+        self.exportButton.clicked.connect(self.onExportButtonClicked)
 
 
     def resetValues(self):
@@ -88,22 +90,45 @@ class PCBOutlineCreator(QtGui.QWidget):
         self.cornersSpinBox.setEnabled(bool(checked))
 
     def onSaveButtonClicked(self):
-        filename = self.inputFileLineEdit.text()
-        length = self.lengthSpinBox.value()
-        width = self.widthSpinBox.value()
-        line_width = self.lineWidthSpinBox.value()
-        rounded = self.cornersCheckBox.isChecked()
-        corners_radius = self.cornersSpinBox.value()
-        x = self.xSpinBox.value()
-        y = self.ySpinBox.value()
+        reply = QtGui.QMessageBox.question(parent=self, title='Attention',
+                                           text='File will be overwritten.\nDo you still want to proceed?',
+                                           buttons=QtGui.QMessageBox.Yes | QtGui.QMessageBox.No,
+                                           defaultButton=QtGui.QMessageBox.No)
 
-        print "Values are: "
-        print "Filename: %s" % filename
-        print "Length: %.2f Width: %.2f" % (length, width)
-        print "Line width: %.2f" % line_width
-        if corners_radius:
-            print "Corner radius: %.2f" % corners_radius
-        print "x: %.2f y: %.2f" % (x, y)
+        if reply == QtGui.QMessageBox.Yes:
+            filename = self.inputFileLineEdit.text()
+            length = self.lengthSpinBox.value()
+            width = self.widthSpinBox.value()
+            line_width = self.lineWidthSpinBox.value()
+            rounded = self.cornersCheckBox.isChecked()
+            corners_radius = self.cornersSpinBox.value()
+            x = self.xSpinBox.value()
+            y = self.ySpinBox.value()
+
+            print "Values are: "
+            print "Filename: %s" % filename
+            print "Length: %.2f Width: %.2f" % (length, width)
+            print "Line width: %.2f" % line_width
+            if corners_radius:
+                print "Corner radius: %.2f" % corners_radius
+            print "x: %.2f y: %.2f" % (x, y)
+
+
+    def onInputFileButtonClicked(self):
+        filename, filter = QtGui.QFileDialog.getOpenFileName(parent=self, caption='Open file', dir='.', filter='Kicad PCB Files (*.kicad_pcb)')
+
+        if filename:
+            self.inputFileLineEdit.setText(filename)
+
+    def onExportButtonClicked(self):
+        filename, filter = QtGui.QFileDialog.getSaveFileName(parent=self, caption='Select output file', dir='.', filter='Kicad PCB Files (*.kicad_pcb)')
+
+        if filename:
+            if '.kicad_pcb' != filename[:-10]:
+                filename += '.kicad_pcb'
+
+            print filename, filter
+
 
 
 if __name__ == '__main__':
