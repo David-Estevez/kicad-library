@@ -2,7 +2,7 @@ Footprints and modules for KiCAD
 --------------------------------------------------------------------------------
 Library containing footprints for kicad
 
-*I will add soon instructions about how to use this as a git submodule in your project*
+Check out all the available footprints at the [wiki](https://github.com/David-Estevez/kicad-library/wiki).
 
 Author: David Estevez Fernandez (DEF)
 
