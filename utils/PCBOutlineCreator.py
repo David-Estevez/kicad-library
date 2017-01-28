@@ -31,6 +31,21 @@ def load_ui(file_name, where=None):
 class PCBOutlineCreator(QtGui.QWidget):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
+
+        # Create class members
+        self.inputFileButton = None
+        self.inputFileLineEdit = None
+        self.exportButton = None
+        self.saveButton = None
+        self.lengthSpinBox = None
+        self.widthSpinBox = None
+        self.lineWidthSpinBox = None
+        self.cornersSpinBox = None
+        self.cornersCheckBox = None
+        self.xSpinBox = None
+        self.ySpinBox = None
+
+        # Configure UI
         self.setupUI()
         self.resetValues()
 
