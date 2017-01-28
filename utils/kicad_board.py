@@ -65,7 +65,7 @@ class KicadBoard:
             self.board_raw.append('  '+line+'\n')
         self.board_raw.append(')\n')
 
-        print self.board_raw
+        print(self.board_raw)
 
         # Return result
         return outline
@@ -80,7 +80,7 @@ class KicadBoard:
 if __name__ == '__main__':
     board = KicadBoard('../../etch-a-sketch.kicad_pcb')
     for line in board.add_rect_outline(50, 50, 5, 0.2):
-        print line
+        print(line)
 
 
     board.save()

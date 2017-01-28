@@ -4,6 +4,7 @@ from PySide import QtUiTools
 import os, sys
 from kicad_board import KicadBoard
 
+
 def load_ui(file_name, where=None):
     """
     Loads a .UI file into the corresponding Qt Python object
@@ -26,12 +27,27 @@ def load_ui(file_name, where=None):
 
     return ui
 
+
 class PCBOutlineCreator(QtGui.QWidget):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
+
+        # Create class members
+        self.inputFileButton = None
+        self.inputFileLineEdit = None
+        self.exportButton = None
+        self.saveButton = None
+        self.lengthSpinBox = None
+        self.widthSpinBox = None
+        self.lineWidthSpinBox = None
+        self.cornersSpinBox = None
+        self.cornersCheckBox = None
+        self.xSpinBox = None
+        self.ySpinBox = None
+
+        # Configure UI
         self.setupUI()
         self.resetValues()
-
 
     def setupUI(self):
         # Load UI and set it as main layout
@@ -78,7 +94,6 @@ class PCBOutlineCreator(QtGui.QWidget):
         self.inputFileButton.clicked.connect(self.onInputFileButtonClicked)
         self.exportButton.clicked.connect(self.onExportButtonClicked)
 
-
     def resetValues(self):
         self.lengthSpinBox.setValue(50)
         self.widthSpinBox.setValue(50)
@@ -124,7 +139,6 @@ class PCBOutlineCreator(QtGui.QWidget):
                 board.save()
                 QtGui.QMessageBox.information(self, 'Done!', 'Operation performed successfully')
 
-
     def onInputFileButtonClicked(self):
         filename, filter = QtGui.QFileDialog.getOpenFileName(parent=self, caption='Open file', dir='.', filter='Kicad PCB Files (*.kicad_pcb)')
 
@@ -165,7 +179,6 @@ class PCBOutlineCreator(QtGui.QWidget):
                 # Save result
                 board.save(out_filename)
                 QtGui.QMessageBox.information(self, 'Done!', 'Operation performed successfully')
-
 
 
 if __name__ == '__main__':
