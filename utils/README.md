@@ -1,4 +1,4 @@
-#KicadBoard Usage
+# KicadBoard Usage
 ---------------------------
 
 ## Using graphical interface
